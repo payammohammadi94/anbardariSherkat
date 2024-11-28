@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        {% block title %}{% endblock title %}
+		
+		<!-- Description, Keywords and Author -->
+		<meta name="description" content="Your description">
+		<meta name="keywords" content="Your,Keywords">
+		<meta name="author" content="ResponsiveWebInc">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="{% static 'productRegister/css/bootstrap.min.css' %}" rel="stylesheet">
+		<!-- Font awesome CSS -->
+		<link href="{% static 'productRegister/css/font-awesome.min.css' %}" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="{% static 'productRegister/css/style.css' %}" rel="stylesheet">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="#">
+	</head>
+	
+	<body>
+	
+        {% block body %}{% endblock body %}
+		
+		
+		<!-- Javascript files -->
+		<!-- jQuery -->
+		<script src="{% static 'productRegister/js/jquery.js' %}"></script>
+		<!-- Bootstrap JS -->
+		<script src="{% static 'productRegister/js/bootstrap.min.js' %}"></script>
+		<!-- Respond JS for IE8 -->
+		<script src="{% static 'productRegister/js/respond.min.js' %}"></script>
+		<!-- HTML5 Support for IE -->
+		<script src="{% static 'productRegister/js/html5shiv.js' %}"></script>
+		<!-- Custom JS -->
+		<script src="{% static 'productRegister/js/custom.js' %}"></script>
+	</body>	
+</html>

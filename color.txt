@@ -1,0 +1,16 @@
+New VernaSanat Color Palette
+----------
+main color #52C2AC
+secondary Color #001C18
+-----------
+
+Old Vernasanat color Palette
+main Color #136B39
+secondary Color #8EAF44
+other #338B972
+
+---------------
+kANDOO1pLUS COLOR Palette
+
+MAIN COLOR #FDB016
+secondary COLOR #000000

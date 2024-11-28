@@ -1,0 +1,55 @@
+
+		{% block title %}
+        <title>product-edit</title>
+    {% endblock title %}
+
+
+{% block body %}
+    <div class="wrapper">
+    
+        <!-- header -->
+        {% include "./header.html" %}
+        
+        <!-- banner -->
+        
+            <div class="container">
+                <!-- form content / login area -->
+                <div class="login-area">
+                    <!-- heading -->
+                    <h2>Product Register:</h2>
+                    <form role="form" id="login-form" method="post">
+                        {% csrf_token %}
+
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputUser1" placeholder="Name" name="first_last_name" value={{first_last_name}}>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputUser1" placeholder="Prudoct Name" name="prudoct_name" value={{product_name}}>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputUser1" placeholder="Prudoct Code" name="prudoct_code" value={{product_code}}>
+                        </div>
+
+                        {% comment %} <div class="checkbox form-group">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div> {% endcomment %}
+                        <button type="submit" class="btn btn-default">Edit</button>
+                    </form>
+                </div>
+            </div>
+        
+        <!-- banner end -->
+        
+        <!-- footer -->
+        {% comment %} {% include "./footer.html" %} {% endcomment %}
+
+    </div>
+    
+
+    {% endblock body %}

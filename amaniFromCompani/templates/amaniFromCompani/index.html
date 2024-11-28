@@ -1,0 +1,73 @@
+{% extends "amaniFromCompani/base.html" %}
+{% load static %}
+
+{% block title %}
+	<title>Amani-Home</title>
+{% endblock title %}
+
+{% block body %}
+	
+<div class="wrapper">
+		
+		{% include "./header.html" %}
+		
+		<!-- banner -->
+
+		<!-- banner end -->
+
+		<!-- events -->
+		<div class="event" id="event">
+			<div class="container">
+				<div class="default-heading">
+					<!-- heading -->
+					<h2>Amani Out</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<!-- event item -->
+						<a href="{% url 'amaniFromCompani:productRegistration' %}">
+							<div class="event-item">
+								<!-- image -->
+								<img class="img-responsive" src="{% static "amaniFromCompani/img/poster/poster1.jpg" %}" alt="Events" />
+								<!-- heading -->
+								<h4 style="text-align: center;"><a href="{% url 'amaniFromCompani:productRegistration' %}">Product registration</a></h4>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<!-- event item -->
+						 <a href="{% url 'amaniFromCompani:delivered-products' %}">
+							<div class="event-item">
+								<!-- image -->
+								<img class="img-responsive" src="{% static "amaniFromCompani/img/poster/poster2.png" %}" alt="Events" />
+								<!-- heading -->
+								<h4 style="text-align: center;"><a href="{% url 'amaniFromCompani:delivered-products' %}">Delivered products</a></h4>
+								<!-- sub text -->
+								
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<!-- event item -->
+						<a href="#">
+							<div class="event-item">
+								<!-- image -->
+								<img class="img-responsive" src="{% static "amaniFromCompani/img/poster/poster3.jpg" %}" alt="Events" />
+								<!-- heading -->
+								<h4 style="text-align: center;"><a href="#">Total list</a></h4>
+								<!-- sub text -->
+							</div>
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- footer -->
+			{% comment %} {% include "./footer.html" %} {% endcomment %}
+
+	</div>
+
+	{% endblock body %}
+
